@@ -1,5 +1,0 @@
-pillow
-pypiwin32
-requests
-pyautogui
-packaging
