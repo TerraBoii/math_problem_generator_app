@@ -10,11 +10,14 @@
 </head>
 <body style="background-color: #100c0c;">
 
+    <!-- Top of the page -->
+    <span id="home"></span>
+
     <!-- Navigation bar -->
 
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="index.html" id="navbar__home" title="Math problem generator app">
+            <a href="/" id="navbar__home" title="Math problem generator app">
                 <img class="navbar__logo" src="logo.png" alt="MPGA" />
             </a>
             <div class="navbar__toggle" id="mobile-menu">
@@ -31,21 +34,21 @@
                     <a href="#download" class="navbar__links"><b>Download</b></a>
                 </li>
                 <li class="navbar__item">
-                    <a href="description.html" class="navbar__links">Description</a>
+                    <a href="#description" class="navbar__links">Description</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="about.html" class="navbar__links">About Us</a>
+                    <a href="#about" class="navbar__links">About Us</a>
                 </li>
                 <li class="navbar__item">
                     <a href="contact.html" class="navbar__links">Contact Us</a>
                 </li>
                 <li class="navbar__item--mobile">
-                    <a href="index.html" class="navbar__links">Change language</a>
+                    <a href="/" class="navbar__links">Change language</a>
                 </li>
                 <li class="language__menu">
                     <span class="language__menu--eng">En</span>
                     <div class="language__menu--ru">
-                        <a href="index.html">Ru</a>
+                        <a href="/">Ru</a>
                     </div>
                 </li>
             </ul>
@@ -54,7 +57,7 @@
 
     <!-- Hero section -->
 
-    <div class="hero" id=home>
+    <div class="hero">
         <div class="hero__container">
             <div class="hero__content">
                 <h1 class="hero__heading">MATH PROBLEM GENERATOR APP</h1>
@@ -92,18 +95,53 @@
     <div class="separator" id="description""></div>
 
     <div class="description">
-        <div class="desc__container">
-            <h1 class="desc__heading">Features</h1>
-            <div class="desc__content">
-
-            </div>
+        <div class="desc__container--main">
+            <h1 class="desc__heading">Brief description</h1>
+            <h2 class="desc__subhead">of the project</h2>
+            <p class="desc__description"></p>
+        </div>
+        <div class="desc__container--extra">
+            <p class="desc__description">
+                The application and webpage was created as school project. It was created
+                using simple technologies: application is written in Python using Tkinter
+                as main GUI framework. This webpage is not super complicated and quite
+                simple.
+            </p>
+            <h2 class="desc__topic">Some extra info:</h2>
+            <h2 class="desc__topic">1. Do you need to have Internet connection?</h2>
+            <p class="desc__description">
+                No, Internet connection is not necessary for application to function properly
+                but it is needed to update the application. 
+            </p>
+            <h2 class="desc__topic">2. A little about math problems.</h2>
+            <p class="desc__description">
+                This application generates different math related problems from simple 
+                to quite interesting.
+            </p>
+            <h2 class="desc__topic">2. Why "math problem generator"?</h2>
+            <p class="desc__description">
+                The answer is simle: "Why not?". The idea of creating a generator for math
+                problems came randomly and was interesting. For those who want to have more
+                detailed answer here it is:<br>"Why don't try to create
+                something that can help someone. Even if no one will notice this creation the
+                creator learned something new while creating it."
+            </p>
         </div>
     </div>
 
     <!-- About section -->
 
-    <div class="about" id="about">
-        <div class="about__container">
+    <div class="separator"></div>
+    <div class="separator" id="about"></div>
+
+    <div class="about">
+        <div class="about__container--head">
+            <h1 class="about__header">About creator</h1>
+            <h2 class="about__subheader">
+                The application and the webpage<br>were created by single person
+            </h2>
+        </div>
+        <div class="about__container--body">
             
         </div>
     </div>
