@@ -616,16 +616,7 @@
 
 .about__title h1 {
     font-size: 2.5rem;
-    background-color: #249126;
-    background-size: 100%;
-    background-image: linear-gradient(to top, #2f642a, #0e6127);
-    background-image: -moz-linear-gradient(bottom, #2f642a, #0e6127);
-    background-image: -webkit-linear-gradient(to top, #2f642a, 0%, #0e6127, 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    color: #0e6127;
 }
 
 .about__story, .about__goal {
