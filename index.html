@@ -17,7 +17,7 @@
 
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="index" id="navbar__home" title="Math problem generator app">
+            <a href="index.html" id="navbar__home" title="Math problem generator app">
                 <img class="navbar__logo" src="logo.png" alt="MPGA" />
             </a>
             <div class="navbar__toggle" id="mobile-menu">
@@ -34,13 +34,13 @@
                     <a href="#download" class="navbar__links"><b>Download</b></a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#description" class="navbar__links">Description</a>
+                    <a href="#info" class="navbar__links">Info</a>
                 </li>
                 <li class="navbar__item">
                     <a href="#about" class="navbar__links">About Us</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="contact" class="navbar__links">Contact Us</a>
+                    <a href="#contact" class="navbar__links">Contact Us</a>
                 </li>
                 <li class="navbar__item--mobile">
                     <a href="." class="navbar__links">Change language</a>
@@ -48,7 +48,7 @@
                 <li class="language__menu">
                     <span class="language__menu--eng">En</span>
                     <div class="language__menu--ru">
-                        <a href="index">Ru</a>
+                        <a href="index.html">Ru</a>
                     </div>
                 </li>
             </ul>
@@ -63,10 +63,13 @@
                 <h1 class="hero__heading">MATH PROBLEM GENERATOR APP</h1>
                 <p class="hero__subheading">
                     Math is beautiful. Most things could be done with it.<br>
-                    Learn and practice math by solving various problems that are created with one click.<br>
+                    Learn and practice math by solving various problems that are created
+                    with one click.<br>
                     <span><b title="Windows mostly.">(PC only)</b></span>
                 </p>
-                <button class="hero__btn" onclick="location.href='#download'"><b>BEGIN THE JOURNEY!</b></button>
+                <button class="hero__btn" onclick="location.href='#download'">
+                    <b>BEGIN THE JOURNEY!</b>
+                </button>
             </div>
         </div>
     </div>
@@ -79,8 +82,13 @@
         <div class="download__container">
             <div class="download__content">
                 <h1>Let's start</h1>
-                <p>Begin the wonderful journey of learning math by downloading the application</p>
-                <button class="download__btn" onclick="location.href=''"><b>Download</b></button>
+                <p>
+                    Begin the wonderful journey of learning math by downloading
+                    the application
+                </p>
+                <button class="download__btn" onclick="location.href=''">
+                    <b>Download</b>
+                </button>
             </div>
             <div class="download__img--container">
                 <image src="app_ss_main.png" id="download__img" alt="Application's screenshot." title="Application's screenshot." />
@@ -90,41 +98,32 @@
 
     <div class="separator"></div>
 
-    <!-- Description section -->
+    <!-- Info section -->
 
-    <div class="separator" id="description""></div>
+    <div class="separator" id="info""></div>
 
-    <div class="description">
-        <div class="desc__container--main">
-            <h1 class="desc__heading">Brief description</h1>
-            <h2 class="desc__subhead">of the project</h2>
-            <p class="desc__description"></p>
+    <div class="info">
+        <div class="info__container--main">
+            <h1 class="info__heading">Some info</h1>
+            <h2 class="info__subhead">about the project</h2>
+            <p class="info__info"></p>
         </div>
-        <div class="desc__container--extra">
-            <p class="desc__description">
-                The app and webpage were created as school project. App was created
-                using simple technologies: app is written in Python using Tkinter as
-                main GUI framework. This webpage is not super complicated and quite
-                simple as it was built with HTML, CSS and few lines of JavaScript.
-            </p>
-            <h2 class="desc__topic">Some extra info:</h2>
-            <h2 class="desc__topic">1. Do you need Internet connection for the app?</h2>
-            <p class="desc__description">
-                No, Internet connection is not necessary for app to function properly
+        <div class="info__container--extra">
+            <h2 class="info__topic">1. Internet connection for the app</h2>
+            <p class="info__info">
+                Internet connection is not necessary for app to function properly
                 but it is needed to update the app. 
             </p>
-            <h2 class="desc__topic">2. A little about math problems.</h2>
-            <p class="desc__description">
+            <h2 class="info__topic">2. A little about math problems</h2>
+            <p class="info__info">
                 The app generates different math related problems from simple 
-                to quite interesting.
+                to quite interesting. Those math problems are generated from limited
+                pull of topics.
             </p>
-            <h2 class="desc__topic">2. Why "math problem generator"?</h2>
-            <p class="desc__description">
-                The simle answer is: "Why not?". The idea of creating a generator for math
-                problems came randomly and was interesting. For those who want to have more
-                detailed answer here it is:<br>"Why not try to create
-                something that can help someone. Even if no one notices this creation the
-                creator will learn something new while creating it."
+            <h2 class="info__topic">3. Updates are optional</h2>
+            <p class="info__info">
+                If newer version is available app won't update itself without user
+                permission. App asks that permission every time it launches.
             </p>
         </div>
     </div>
@@ -136,14 +135,59 @@
 
     <div class="about">
         <div class="about__container--head">
-            <h1 class="about__header">About creator</h1>
-            <h2 class="about__subheader">
-                The application and the webpage<br>were created by single person
-            </h2>
+            <h1 class="about__header">About Us</h1>
         </div>
-        <div class="about__container--body">
-            
+        <div class="about__title">
+            <h1>Short story:</h1>
         </div>
+        <div class="about__story">
+            <p>
+                The idea of creating a generator for math problems came randomly
+                and was interesting. The result of this idea maybe will help some
+                people in understanding quite simple math.<br>
+                Sorry for super short story it is hard to create bigger one.
+            </p>
+        </div>
+        <div class="about__title">
+            <h1>Goals:</h1>
+        </div>
+        <div class="about__goal">
+            <p class=>
+                1. Make creation of math related problems easier.<br>
+                2. Automate creation of math related problems.
+            </p>
+        </div>
+        <div class="about__title">
+            <h1>Team:</h1>
+        </div>
+        <div class="about__container--team">
+            <div class="about__team__img">
+                <img src="https://avatars.githubusercontent.com/u/81579070?v=4" id="creator__img" alt="Profile picture" title="Profile picture" />
+            </div>
+            <div class="about__team">
+                <h1 title="Nickname">TerraBoii.</h1>
+                <p>
+                    Author, main developer, main designer.<br>
+                    "As beginner I think I created interesting app that I hope
+                    will help someone"<br>
+                    If you want to check my other project you can check my profile
+                    on GitHub:<br>
+                    &ensp;&nbsp;
+                    <a href="https://github.com/TerraBoii" title="TerrraBoii's profile">
+                        My profile with other projects
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Info section -->
+
+    <div class="separator" id="contact""></div>
+
+    <div class="contact">
+        
     </div>
 
     <!-- placeholders -->

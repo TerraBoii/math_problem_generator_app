@@ -486,16 +486,16 @@
 
 }
 
-/* Description section */
+/* Info section */
 
-.description {
-    padding: 120px 0;
+.info {
+    padding: 60px 0;
     background-image: linear-gradient(to bottom, #0c0707, #101010, #0c0707);
     background-image: -moz-linear-gradient(top, #0c0707, #101010, #0c0707);
     background-image: -webkit-linear-gradient(to bottom, #0c0707, 0%, #101010, 50%, #f19ed8, 100%);
 }
 
-.desc__container--main {
+.info__container--main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -507,18 +507,18 @@
     padding: 30px;
 }
 
-.desc__heading {
+.info__heading {
     font-size: 3.5rem;
     margin-bottom: 7px;
     color: #67AA56;
 }
 
-.desc__subhead {
+.info__subhead {
     font-size: 1.5rem;
     color: #5a9c4a;
 }
 
-.desc__container--extra {
+.info__container--extra {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -529,14 +529,14 @@
     text-align: left;
 }
 
-.desc__topic {
+.info__topic {
     padding-top: 15px;
     padding-left: 15%;
     font-size: 1.4rem;
     color: #358d38;
 }
 
-.desc__description {
+.info__info {
     width: 80%;
     font-size: 1.14rem;
     color: #257028;
@@ -548,24 +548,24 @@
 
 @media screen and (max-width: 700px) {
 
-    .desc__heading {
+    .info__heading {
         font-size: 2rem;
         margin-bottom: 7px;
         color: #67AA56;
     }
 
-    .desc__subhead {
+    .info__subhead {
         font-size: 1.2rem;
         color: #5a9c4a;
     }
 
-    .desc__topic {
+    .info__topic {
         font-size: 1.1rem;
         color: #358d38;
         padding-left: 9%;
     }
 
-    .desc__description {
+    .info__info {
         width: 80%;
         font-size: 1rem;
         color: #257028;
@@ -578,7 +578,8 @@
 /* About section */
 
 .about {
-    padding: 200px 0;
+    padding: 60px 0;
+    background-color: #0c0707;
 }
 
 .about__container--head {
@@ -591,4 +592,173 @@
     height: 90%;
     text-align: center;
     padding: 30px;
+}
+
+.about__header {
+    font-size: 3.6rem;
+    background-color: #249126;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #249126, #0e6127);
+    background-image: -moz-linear-gradient(top, #249126, #0e6127);
+    background-image: -webkit-linear-gradient(to bottom, #249126, 0%, #0e6127, 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.about__title {
+    justify-content: center;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.about__title h1 {
+    font-size: 2.5rem;
+    background-color: #249126;
+    background-size: 100%;
+    background-image: linear-gradient(to top, #2f642a, #0e6127);
+    background-image: -moz-linear-gradient(bottom, #2f642a, #0e6127);
+    background-image: -webkit-linear-gradient(to top, #2f642a, 0%, #0e6127, 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.about__story, .about__goal {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about__story, .about__goal p {
+    font-size: 1.2rem;
+    background-color: #3b7942;
+    background-size: 100%;
+    background-image: linear-gradient(45deg, #359640, #24c955);
+    background-image: -moz-linear-gradient(45deg, #359640, #24c955);
+    background-image: -webkit-linear-gradient(45deg, #359640, 0%, #24c955, 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.about__container--team {
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90hv;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.about__team {
+    text-align: left;
+    margin-left: 30px;
+    height: 100%;
+    margin-top: 0.9rem;
+}
+
+.about__team h1 {
+    font-size: 2rem;
+    color: #2f642a;
+}
+
+.about__team p {
+    color: #3b7942;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.about__team a:link {
+    color: #2fa03c;
+}
+
+.about__team a:visited {
+    color: #2fa03c;
+}
+
+.about__team a:hover {
+    color: #57a035;
+}
+
+.about__team a:active {
+    color: #397a4f;
+}
+
+.about__team__img {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#creator__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: #249126;
+    padding: 5px;
+    background-image: linear-gradient(0deg, #65a974, #0f3613);
+    background-image: -moz-linear-gradient(0deg, #65a974, #0f3613);
+    background-image: -webkit-linear-gradient(0deg , #65a974, 0%, #0f3613, 100%);
+}
+
+@media screen and (max-width: 800px) {
+
+    .about__header {
+        font-size: 2.2rem;
+    }
+
+    .about__title h1 {
+        font-size: 1.8rem;
+    }
+
+    .about__story, .about__goal p {
+        font-size: 1.2rem;
+    }
+
+    .about__container--team {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90hv;
+    }
+
+    .about__team {
+        width: 100%;
+        margin-top: 0.9rem;
+        margin-left: 0;
+    }
+
+    .about__team h1 {
+        font-size: 1.5rem;
+        color: #2f642a;
+    }
+
+    .about__team p {
+        color: #3b7942;
+        font-size: 1rem;
+        margin-top: 1rem;
+        font-weight: 700;
+        margin-left: 1px;
+    }
+
+    #creator__img {
+        width: 40%;
+        height: 40%;
+    }
+
 }
